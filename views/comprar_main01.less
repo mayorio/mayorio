@@ -1,5 +1,119 @@
-@background: green;
+@headerFooterColor: #77c;
+@headerFooterBorder: @headerFooterColor - #222;
+@financeColor: #7c7;
+@financeBorder: @financeColor - #222;
+@distroColor: #777;
+@distroBorder: @distroColor - #222;
+@pointColor: #c77;
+@pointBorder: @pointColor - #222;
+
+.rounding(@radius: 5px) {
+	-webkit-border-radius: @radius;
+	   -moz-border-radius: @radius;
+	        border-radius: @radius;
+}
+
+.shadowing() {
+	
+}
+
+.mainBMP() {
+	.rounding(20px);
+	margin: 2px;
+	color: #fff;
+}
+
+.internalBMP {
+	
+}
 
 body {
-	background: @background;
+	width: 960px;
+	margin: 0 auto;
+}
+
+header, footer, section {
+	.mainBMP;
+}
+
+header, footer {
+	background: @headerFooterColor;
+	border: solid thin @headerFooterBorder;	
+	padding: 20px 25px 25px 25px;
+}
+
+header h1 {
+	color: white;
+	font-size: 24pt;
+}
+
+header {
+	width: 906px;
+	height: 35px;
+}
+
+#left {
+	float: left;
+}
+
+#right {
+	float: right;
+}
+
+#purchase {
+	width: 614px;
+	height: 60px;
+	background: @financeColor;
+	border: solid thin @financeBorder;
+	padding: 10px;
+}
+
+#promotions {
+	width: 294px;
+	height: 140px;
+	background: @pointColor;
+	border: solid thin @pointBorder;
+	padding: 10px;
+}
+
+#distribution {
+	width: 614px;
+	height: 380px;
+	background: @distroColor;
+	border: solid thin @distroBorder;
+	padding: 10px;
+}
+
+#distro_summ {
+	float: left;
+	width: 134px;
+	height: 140px;
+	background: @distroColor;
+	border: solid thin @distroBorder;
+	padding: 10px;
+}
+
+#financials {
+	float: right;
+	width: 134px;
+	height: 140px;
+	background: @financeColor;
+	border: solid thin @financeBorder;	
+	padding: 10px;
+}
+
+#points {
+	clear: both;
+	width: 294px;
+	height: 140px;
+	background: @pointColor;
+	border: solid thin @pointBorder;
+	padding: 10px;
+}
+
+footer {
+	clear: both;
+	width: 940px;
+	height: 80px;
+	padding: 10px;
 }
