@@ -3,12 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Mayorio - Comprar - Prinicipal</title>
-		<link rel="stylesheet" href="reset.css">
-<!-- 
-		<link rel="stylesheet/less" type="text/css" href="comprar_main01.less">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/start/jquery-ui-1.8.18.custom.css">
+		<link rel="stylesheet/less" type="text/css" href="css/comprar_main01.less">
 		<script src="less-1.2.1.min.js"></script>
+<!--
+		<link rel="stylesheet" href="css/comprar_main01.css">
 -->
-		<link rel="stylesheet" href="comprar_main01.css">
 	</head>
 	<body>
 		<header>
@@ -32,12 +33,46 @@
 			<section id="financials">
 				Resumen de informaci&oacute;n financiera
 			</section>
-			<section id="points">
-				Resumen de puntos
-			</section>
+			<div id="points">
+				<ul>
+					<li><a href="#tabs-1">PUNTOS</a></li>
+					<li><a href="#tabs-2">CANJEE</a></li>
+					<li><a href="#tabs-3">PIERDE</a></li>
+				</ul>
+				<div id="tabs-1">
+					puntos...
+<!--
+					<dl>
+						<dt></dt>
+						<dd></dd>
+						<dt></dt>
+						<dd></dd>
+						<dt></dt>
+						<dd></dd>
+						<dt></dt>
+						<dd></dd>
+						<dt></dt>
+						<dd></dd>
+					</dl>
+-->
+				</div>
+				<div id="tabs-2">
+					canjee...
+				</div>
+				<div id="tabs-3">
+					pierde...
+				</div>
+			</div>
 		</div>
 		<footer>
 			&copy; Mayorio, 2012
 		</footer>
+		<script src="jquery-1.7.1.min.js"></script>
+		<script src="jquery-ui-1.8.18.custom.min.js"></script>
+		<script>
+			(function($) {
+				$("#points").tabs();
+			})(jQuery);
+		</script>
 	</body>
 </html>
