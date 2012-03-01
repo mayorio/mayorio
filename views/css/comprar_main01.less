@@ -6,6 +6,8 @@
 @distroBorder: @distroColor - #222;
 @pointColor: #c77;
 @pointBorder: @pointColor - #222;
+@pointback: #4297D7;
+@pointborder: @pointback - #033;
 
 .rounding(@radius: 5px) {
 	-webkit-border-radius: @radius;
@@ -128,6 +130,77 @@ header {
 	border-right-color: #ACDD4A;
 	border-bottom-color: #ACDD4A;
 	border-top-color: #ACDD4A;
+}
+
+.ui-tabs-panel dl {
+	width: 280px;
+}
+
+.ui-tabs-panel dl dt {
+	clear: both;
+	float: left;
+	background: @pointback;
+	border: solid thin @pointborder;
+	width: 115px;
+	height: 30px;
+	color: white;
+	padding: 15px 0 0 5px;
+	font-weight: bold;
+}
+
+.ui-tabs-panel dl dd {
+	float: left;
+	background: white;
+	border: solid thin @pointborder;
+	width: 95px;
+	height: 30px;
+	color: red;	
+	padding: 15px 0 0 35px;
+	font-weight: bold;
+}
+
+.top-right-round {
+	-webkit-border-top-right-radius: 10px;
+	   -moz-border-top-right-radius: 10px;
+	        border-top-right-radius: 10px;
+}
+
+.top-left-round {
+	-webkit-border-top-left-radius: 10px;
+	   -moz-border-top-left-radius: 10px;
+	        border-top-left-radius: 10px;
+}
+.bottom-right-round {
+	-webkit-border-bottom-right-radius: 10px;
+	   -moz-border-bottom-right-radius: 10px;
+	        border-bottom-right-radius: 10px;
+}
+.bottom-left-round {
+	-webkit-border-bottom-left-radius: 10px;
+	   -moz-border-bottom-left-radius: 10px;
+	        border-bottom-left-radius: 10px;
+}
+
+.pointheader, .pointlist {
+	border: solid thin black;
+}
+
+.pointheader {
+	height: 20px;
+	-webkit-border-top-right-radius: 10px;
+	   -moz-border-top-right-radius: 10px;
+	        border-top-right-radius: 10px;
+ 	 -webkit-border-top-left-radius: 10px;
+	    -moz-border-top-left-radius: 10px;
+	         border-top-left-radius: 10px;
+}
+
+.pointlist {
+	height: 80px;
+	overflow-y: scroll;
+	-webkit-border-bottom-left-radius: 10px;
+	   -moz-border-bottom-left-radius: 10px;
+	        border-bottom-left-radius: 10px;
 }
 
 footer {

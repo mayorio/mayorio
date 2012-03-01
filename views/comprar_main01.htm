@@ -40,27 +40,28 @@
 					<li><a href="#tabs-3">PIERDE</a></li>
 				</ul>
 				<div id="tabs-1">
-					puntos...
-<!--
 					<dl>
-						<dt></dt>
-						<dd></dd>
-						<dt></dt>
-						<dd></dd>
-						<dt></dt>
-						<dd></dd>
-						<dt></dt>
-						<dd></dd>
-						<dt></dt>
-						<dd></dd>
+						<dt>Nuevos Puntos!</dt>
+						<dd>1475</dd>
+						<dt>Puntos Acumulados</dt>
+						<dd>74256</dd>
 					</dl>
--->
 				</div>
 				<div id="tabs-2">
-					canjee...
+					<div class="pointheader">Canjee sus 72456 puntos:</div>
+					<div class="pointlist">
+						<div class="pointlistitem">Bono de descuento por S/.500 - 5000 ptos</div>
+						<div class="pointlistitem">Bicicleta Monark 475 Monta&ntilde;a - 7000 ptos</div>
+						<div class="pointlistitem">XBOX 360 con 3 juegos originales - 7000 ptos</div>
+					</div>
 				</div>
 				<div id="tabs-3">
-					pierde...
+					<div class="pointheader">Mire las ofertas que est&aacute; perdiendo:</div>
+					<div class="pointlist">
+						<div class="pointlistitem">Bono de descuento por S/.1000 - 10000 ptos</div>
+						<div class="pointlistitem">Motocicleta Honda 9992 Monta&ntilde;a - 70000 ptos</div>
+						<div class="pointlistitem">Televisor Plasma 42 pulgadas LG - 70000 ptos</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -72,6 +73,11 @@
 		<script>
 			(function($) {
 				$("#points").tabs();
+
+				$(".ui-tabs-panel dl dd:first").addClass('top-right-round');
+				$(".ui-tabs-panel dl dt:first").addClass('top-left-round');
+				$(".ui-tabs-panel dl dd:last").addClass('bottom-right-round');
+				$(".ui-tabs-panel dl dt:last").addClass('bottom-left-round');
 			})(jQuery);
 		</script>
 	</body>
